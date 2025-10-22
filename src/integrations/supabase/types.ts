@@ -14,7 +14,78 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      profiles: {
+        Row: {
+          address: string | null
+          bio: string | null
+          created_at: string
+          date_of_birth: string | null
+          education_level: string | null
+          gender: string | null
+          highest_degree: string | null
+          id: string
+          institution_affiliation: string | null
+          institution_name: string | null
+          linkedin: string | null
+          national_id_back_path: string | null
+          national_id_front_path: string | null
+          nin: string | null
+          status: string | null
+          student_card_path: string | null
+          teaching_qualification_path: string | null
+          updated_at: string
+          user_type: string | null
+          website: string | null
+          wilaya: string | null
+        }
+        Insert: {
+          address?: string | null
+          bio?: string | null
+          created_at?: string
+          date_of_birth?: string | null
+          education_level?: string | null
+          gender?: string | null
+          highest_degree?: string | null
+          id: string
+          institution_affiliation?: string | null
+          institution_name?: string | null
+          linkedin?: string | null
+          national_id_back_path?: string | null
+          national_id_front_path?: string | null
+          nin?: string | null
+          status?: string | null
+          student_card_path?: string | null
+          teaching_qualification_path?: string | null
+          updated_at?: string
+          user_type?: string | null
+          website?: string | null
+          wilaya?: string | null
+        }
+        Update: {
+          address?: string | null
+          bio?: string | null
+          created_at?: string
+          date_of_birth?: string | null
+          education_level?: string | null
+          gender?: string | null
+          highest_degree?: string | null
+          id?: string
+          institution_affiliation?: string | null
+          institution_name?: string | null
+          linkedin?: string | null
+          national_id_back_path?: string | null
+          national_id_front_path?: string | null
+          nin?: string | null
+          status?: string | null
+          student_card_path?: string | null
+          teaching_qualification_path?: string | null
+          updated_at?: string
+          user_type?: string | null
+          website?: string | null
+          wilaya?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
